@@ -136,6 +136,33 @@ html{
     font-weight: bold;
 }
 
+.search_table{
+    width:100%;
+}
+.search_table tr td:nth-child(1){
+    width:70%;
+}
+.search_table tr td:nth-child(2){
+    width:20%;
+}
+
+/* Recipe table */
+.recipe_table tr td:nth-child(1){
+    width:35%;
+    vertical-align: top;
+}
+.recipe_table tr td:nth-child(2){
+    padding-left: 14px;
+}
+.recipe_table tr td .image_content{
+    max-width:100% !important;
+}
+
+/* Recipe */
+.recipe tr td:nth-child(1){
+    width:75%;
+}
+
 /* form elements */
 input{
     width:100%;
@@ -255,22 +282,6 @@ h3{
     border: 2px solid #0047ab;
     color:black;
 }
-.warning{
-    background-color:darkorange;
-    color:white;
-}
-.info{
-    background-color:#0047ab;
-    color:white;
-}
-.critical{
-    background-color: red;
-    color:white;
-}
-.success{
-    background-color: darkgreen;
-    color:white;
-}
 
 /* button */
 .button{
@@ -289,4 +300,63 @@ h3{
     cursor: pointer;
 }
 
+.dashboard_table{
+    width:100%;
+    border-spacing: 10px;
+    border-collapse:collapse;
+    color:white;
+    margin-bottom: 7px;
+}
+.dashboard_table tr td{
+    background-color: #0047ab; 
+    padding:7px;
+    width:33.333%;
+}
+.dashboard_table tr td:not(:last-child){
+    border-right: 3px solid white;
+}
+.dashboard_table tr:nth-child(odd) td{
+   font-size:30pt;
+   font-weight: bold;
+   height: 100px;
+   padding:7px;
+   border-bottom: 3px solid white;
+}
+.dashboard_table tr:nth-child(even) td{
+    font-size:15pt;
+}
 
+/* Colorings */
+.warning{
+    background-color:darkorange;
+    color:white;
+}
+.info{
+    background-color:#0047ab;
+    color:white;
+}
+.critical{
+    background-color: red;
+    color:white;
+}
+.success{
+    background-color: darkgreen;
+    color:white;
+}
+
+.youtube_video{
+    width:100%;
+    min-height:500px;
+    height:500px;
+}
+
+/* Small Screen */
+@media handheld{
+    body{
+        width:100%;
+        padding:0;
+    }
+    .image_content{
+        max-width:100%;
+    }
+}
